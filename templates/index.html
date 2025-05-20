@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOCUMENT</title>
+</head>
+
+<body>
+    <p>
+        {% for post in posts %}
+            <li>{{ post.title }} - {{ post.published_date }}</li>
+        {% endfor %}
+    </p>
+</body>
+
+</html>

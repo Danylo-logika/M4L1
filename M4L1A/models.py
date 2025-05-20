@@ -1,5 +1,6 @@
 from django.db import models
-
+from django.utils import timezone
+from datetime import timedelta
 # Create your models here.
 
 class Author(models.Model):
@@ -8,6 +9,7 @@ class Author(models.Model):
 
     def __str__(self):
         return super().__str__()
+
 
 class Post (models.Model):
     title = models.CharField(max_length=50)
